@@ -15,7 +15,7 @@ on:
 
 jobs:
   build_folia:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -37,7 +37,7 @@ jobs:
         name: "allmusic_server_folia"
         path: build/libs/
   build_bukkit:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -59,7 +59,7 @@ jobs:
         name: "allmusic_server_bukkit"
         path: build/libs/
   build_bungeecord_velocity:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -81,7 +81,7 @@ jobs:
         name: "allmusic_server_bungeecord_velocity"
         path: build/libs/
   build_fabric_1_16_5:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -103,7 +103,7 @@ jobs:
         name: "allmusic_server_fabric_1_16_5"
         path: build/libs/
   build_fabric_1_20_1:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -125,7 +125,7 @@ jobs:
         name: "allmusic_server_fabric_1_20_1"
         path: build/libs/
   build_fabric_1_21:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -147,7 +147,7 @@ jobs:
         name: "allmusic_server_fabric_1_21"
         path: build/libs/
   build_fabric_1_21_6:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -169,7 +169,7 @@ jobs:
         name: "allmusic_server_fabric_1_21_6"
         path: build/libs/
   build_fabric_26_1:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -191,7 +191,7 @@ jobs:
         name: "allmusic_server_fabric_26_1"
         path: build/libs/
   build_forge_1_7_10:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -213,7 +213,7 @@ jobs:
         name: allmusic_server_forge_1_7_10
         path: forge_1_7_10/build/libs/*.jar
   build_forge_1_12_2:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -235,7 +235,7 @@ jobs:
         name: "allmusic_server_forge_1_12_2"
         path: build/libs/
   build_forge_1_16_5:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -257,7 +257,7 @@ jobs:
         name: "allmusic_server_forge_1_16_5"
         path: build/libs/
   build_forge_1_20_1:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -279,7 +279,7 @@ jobs:
         name: "allmusic_server_forge_1_20_1"
         path: build/libs/
   build_neoforge_1_21:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -301,7 +301,7 @@ jobs:
         name: "allmusic_server_neoforge_1_21"
         path: build/libs/
   build_neoforge_1_21_6:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -323,7 +323,7 @@ jobs:
         name: "allmusic_server_neoforge_1_21_6"
         path: build/libs/
   build_onejar_fabric_1_21_6:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
@@ -348,7 +348,7 @@ jobs:
         name: "allmusic_onejar_fabric_1_21_6"
         path: build/libs/
   build_onejar_neoforge_1_21_6:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
