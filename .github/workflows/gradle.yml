@@ -369,6 +369,6 @@ jobs:
   #       link.cmd && cd onejar && cd neoforge_1_21_6 && gradlew build
   #   - name: update
   #     uses: actions/upload-artifact@v4
-      with:
-        name: "allmusic_onejar_neoforge_1_21_6"
-        path: build/libs/
+      # with:
+      #   name: "allmusic_onejar_neoforge_1_21_6"
+      #   path: build/libs/
