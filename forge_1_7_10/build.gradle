@@ -1621,5 +1621,12 @@ dependencies {
 }
 
 shadowJar {
-    configurations = [project.configurations.compile]
+    configurations = [project.configurations.shadowCompile]
+}
+ 
+configurations {
+    shadowCompile {
+        canBeResolved = true
+        extendsFrom compile
+    }
 }
