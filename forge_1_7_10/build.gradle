@@ -1618,8 +1618,11 @@ if (file('addon.late.local.gradle.kts').exists()) {
 
 
 shadowJar {
-    configurations = [project.configurations.shadowCompile]
+    configurations = [project.configurations.runtimeClasspath]
     archiveClassifier.set('all')
+
+    relocate 'okhttp3', 'club.heiqi.allmusic.shadow.okhttp3'
+    relocate 'okio', 'club.heiqi.allmusic.shadow.okio'
 }
  
 configurations {
@@ -1627,6 +1630,10 @@ configurations {
         canBeResolved = true
         extendsFrom compile
     }
+}
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+    implementation 'com.squareup.okio:okio:1.17.5'
 }
 dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.12.13'
