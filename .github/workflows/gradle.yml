@@ -203,15 +203,24 @@ jobs:
         distribution: 'temurin'
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3 # v3.1.0
+    # - name: build
+    #   shell: cmd
+    #   run: |
+    #     link.cmd && cd forge_1_7_10 && gradlew build
     - name: build
       shell: cmd
       run: |
-        link.cmd && cd forge_1_7_10 && gradlew build
-    - name: upload jar
+        link.cmd && cd forge_1_7_10 && gradlew shadowJar
+    # - name: upload jar
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: allmusic_server_forge_1_7_10
+    #     path: forge_1_7_10/build/libs/*.jar
+    - name: upload shadow jar
       uses: actions/upload-artifact@v4
       with:
         name: allmusic_server_forge_1_7_10
-        path: forge_1_7_10/build/libs/*.jar
+        path: forge_1_7_10/build/libs/*all.jar
   # build_forge_1_12_2:
   #   runs-on: windows-latest
   #   permissions:
