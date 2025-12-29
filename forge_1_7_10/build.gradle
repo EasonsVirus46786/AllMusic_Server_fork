@@ -1624,6 +1624,7 @@ dependencies {
 
 shadowJar {
     configurations = [project.configurations.shadowCompile]
+    archiveClassifier.set('all')
 }
  
 configurations {
