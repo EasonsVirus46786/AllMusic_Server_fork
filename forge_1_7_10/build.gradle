@@ -1614,3 +1614,12 @@ if (file('addon.late.local.gradle.kts').exists()) {
 } else if (file('addon.late.local.gradle').exists()) {
     apply from: 'addon.late.local.gradle'
 }
+
+dependencies {
+    compile 'com.squareup.okhttp3:okhttp:3.12.13'
+    compile 'com.squareup.okio:okio:1.15.0'
+}
+
+shadowJar {
+    configurations = [project.configurations.compile]
+}
