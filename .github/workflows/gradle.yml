@@ -207,11 +207,11 @@ jobs:
       shell: cmd
       run: |
         link.cmd && cd forge_1_7_10 && gradlew build
-    - name: update
+    - name: upload jar
       uses: actions/upload-artifact@v4
       with:
-        name: "allmusic_server_forge_1_7_10"
-        path: build/libs/
+        name: allmusic_server_forge_1_7_10
+        path: forge_1_7_10/build/libs/*.jar
   build_forge_1_12_2:
     runs-on: windows-latest
     permissions:
